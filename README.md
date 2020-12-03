@@ -106,38 +106,38 @@ background: rgba( 0,0,0, 0.6);
   (1) section2의 HTML/CSS  
     [section2 REVIEW](https://www.notion.so/green9930/Review-01-Section-02-a1096a88198949aca8c0c76ebccbb5dd)  
     
-    <초안>  
-    ```html
-    <section class="recommend__multi">
-    ...
-    </section>
-    <section class="recommend__euid">
-    ...
-    </section>
-    <button type="button" class="btn-prev" title="이전 페이지">prev</button>
-    <button type="button" class="btn-next" title="다음 페이지">next</button>
-    ```  
+  <초안>
+  ```html
+  <section class="recommend__multi">
+  ...
+  </section>
+  <section class="recommend__euid">
+  ...
+  </section>
+  <button type="button" class="btn-prev" title="이전 페이지">prev</button>
+  <button type="button" class="btn-next" title="다음 페이지">next</button>
+  ```  
       
-    <최종안>  
-    ```html
-    <section class="recommend__multi">
-      <button type="button" class="multi__btn-prev" title="이듬 블랜디드 이전 페이지">prev</button>
-      <button type="button" class="multi__btn-next" title="이듬 블랜디드 다음 페이지">next</button>
-    </section>
-    <section class="recommend__euid">
-      <button type="button" class="euid__btn-prev" title="이듬 블랜디드 이전 페이지">prev</button>
-      <button type="button" class="euid__btn-next" title="이듬 블랜디드 다음 페이지">next</button>
-    </section>
-    ```  
-    처음 구상할 때는 컨텐츠 양 옆에 위치한 버튼이 HTML에서 한 번만 들어가는 방식이었지만 논리 구조를 다시 고민하며 마크업을 수정했다.  
-    시각적 차이는 없으나 앞선 방식은 논리적으로 '멀티 캠퍼스' 섹션을 지나쳐 '이듬 블랜디드'의 컨텐츠를 확인한 후 버튼이 있기 때문에 웹 접근성 측면에서 바람직하지 못한 구성이었다. 따라서 '멀티 캠퍼스' 섹션과 '이듬 블랜디드' 섹션 모두에게 `<button>` 태그를 넣었다.  
-    학습 초기에는 눈앞에 보이는 요소만 고려해서 마크업을 짰지만 점점 논리적인 구조를 먼저 생각하고 있음을 깨달은 경험이었다.  
+  <최종안>  
+  ```html
+  <section class="recommend__multi">
+    <button type="button" class="multi__btn-prev" title="이듬 블랜디드 이전 페이지">prev</button>
+    <button type="button" class="multi__btn-next" title="이듬 블랜디드 다음 페이지">next</button>
+  </section>
+  <section class="recommend__euid">
+    <button type="button" class="euid__btn-prev" title="이듬 블랜디드 이전 페이지">prev</button>
+    <button type="button" class="euid__btn-next" title="이듬 블랜디드 다음 페이지">next</button>
+  </section>
+  ```  
+  처음 구상할 때는 컨텐츠 양 옆에 위치한 버튼이 HTML에서 한 번만 들어가는 방식이었지만 논리 구조를 다시 고민하며 마크업을 수정했다.  
+  시각적 차이는 없으나 앞선 방식은 논리적으로 '멀티 캠퍼스' 섹션을 지나쳐 '이듬 블랜디드'의 컨텐츠를 확인한 후 버튼이 있기 때문에 웹 접근성 측면에서 바람직하지 못한 구성이었다. 따라서 '멀티 캠퍼스' 섹션과 '이듬 블랜디드' 섹션 모두에게 `<button>` 태그를 넣었다.  
+  학습 초기에는 눈앞에 보이는 요소만 고려해서 마크업을 짰지만 점점 논리적인 구조를 먼저 생각하고 있음을 깨달은 경험이었다.  
     
   (2) section3의 CSS  
     [section3 REVIEW](https://www.notion.so/green9930/Review-02-Section-03-c12365a125ba46e488980d30bcf08356)  
     
-    전체 섹션에 padding을 줬음에도 브로슈어 박스가 그 padding을 뚫고 나가는 문제가 발생했고, 브로슈어 박스에 넣은 배경 이미지나 화살표의 위치를 조정해도 해결되지 않았다. 처음엔 임시로 `<a>`의 height를 고정했고, 나머지 파트 CSS를 끝낸 뒤 다시 코드를 살펴봤을 때 브로슈어 박스 내부에 padding을 줬다는 걸 발견했다.    
-    단순한 실수였지만 원인을 빨리 찾지 못해 해결에 난항을 겪었던 부분이었다.  
+  전체 섹션에 padding을 줬음에도 브로슈어 박스가 그 padding을 뚫고 나가는 문제가 발생했고, 브로슈어 박스에 넣은 배경 이미지나 화살표의 위치를 조정해도 해결되지 않았다. 처음엔 임시로 `<a>`의 height를 고정했고, 나머지 파트 CSS를 끝낸 뒤 다시 코드를 살펴봤을 때 브로슈어 박스 내부에 padding을 줬다는 걸 발견했다.    
+  단순한 실수였지만 원인을 빨리 찾지 못해 해결에 난항을 겪었던 부분이었다.  
     
   (3) section6의 HTML  
     [section6 REVIEW](https://www.notion.so/green9930/Review-03-Section-06-9533c81145444f9784ab19c01a07c02a)  
